@@ -1,6 +1,3 @@
-[image1]: ./Example/understeer.gif  "Understeer"
-[image2]: ./Example/oscillation.gif "Oscillation"
-[image3]: ./Example/final_tuning.gif "Final Tuning"
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
@@ -12,15 +9,15 @@ The I (Integral) term is the sum of all previous deviations from reference and i
 Manual parameter tuning was used for this project. Modifying the simualtor to simply output CTE and run faster than real time would enable more efficient tuning methods such as gradient descent. 
 
 The P term was initialized to a low value (0.01) and adjusted up until the car did not understeer as seen below. 0.3 worked well for this. 
-![alt text][image1] 
+![alt text](https://github.com/clintonadams23/PID-Control-Project/blob/master/example/understeer.gif?raw=true)
 
 The I term was found to be unnecessary as there were no persistent biases in this controlled simulation. 
 
 The D term was incremented up to 7.0 where oscillations (shown below) were sufficiently damped as to not cause discomfort.
-![alt text][image2] 
+![alt text](https://github.com/clintonadams23/PID-Control-Project/blob/master/example/oscillation.gif?raw=true) 
 
 This is what the final tuning looked like
-![alt text][image3] 
+![alt text](https://github.com/clintonadams23/PID-Control-Project/blob/master/example/final_tuning.gif?raw=true) 
 
 ## Dependencies
 
